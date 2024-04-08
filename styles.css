@@ -48,8 +48,6 @@ span {
 }
 
 .pattern {
-    /* width: 300px;
-    height: 200px; */
     position: relative;
     overflow: hidden;
 }
@@ -60,6 +58,8 @@ span {
     object-fit: cover;
 }
 
-#imageContainer img canvas {
+#imageContainer,
+img,
+canvas {
     max-width: 100%;
 }

@@ -17,16 +17,11 @@ function generateImage() {
       canvas.width = imageElement.width;
       canvas.height = imageElement.height;
       var ctx = canvas.getContext("2d");
-      // ctx.drawImage(imageElement, 0, 0);
-      ctx.drawImage(imageElement, 0, 0); // 120 , 460
-      ctx.font = "24px Hekaya";
+      ctx.drawImage(imageElement, 0, 0);
+      ctx.font = "110px Hekaya";
       ctx.fillStyle = "#585858";
-      ctx.fillText(userName, 140, 460);
+      ctx.fillText(userName, 540, 1850);
       ctx.direction = "rtl";
-      // Center text horizontally
-      ctx.textAlign = "center";
-      // Center text vertically (optional)
-      ctx.textBaseline = "middle";
       imageContainer.appendChild(canvas);
     };
   };
